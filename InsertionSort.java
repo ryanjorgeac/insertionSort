@@ -51,6 +51,12 @@ public class InsertionSort {
         return true;
     }
 
+    private static void show(Comparable[] a) {
+        for (int i = 0; i < a.length; i++) {
+            StdOut.println(a[i]);
+        }
+    }
+
     public static void sort(Comparable[] a) {
         int N = a.length;
         for (int i = 0; i < N; i++) {
@@ -103,4 +109,12 @@ public class InsertionSort {
         }
         return index;
     }
+
+    public static void main(String[] args) {
+        String[] a = StdIn.readAllLines();
+        InsertionSort.sort(a);
+        show(a);
+    }
 }
+
+
